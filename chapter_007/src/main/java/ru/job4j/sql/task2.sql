@@ -11,6 +11,7 @@ values ('Москва'),
        ('Казань'),
        ('Москва');
 
+-- убрать дубликаты.
 delete from cities
 where id not in (select max(id)
                  from cities

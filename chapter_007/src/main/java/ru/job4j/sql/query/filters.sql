@@ -1,3 +1,4 @@
+
 create table if not exists type
 (
     id   serial primary key not null,

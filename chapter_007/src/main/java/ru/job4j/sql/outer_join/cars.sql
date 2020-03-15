@@ -1,4 +1,3 @@
-begin;
 
 create table if not exists car_body
 (
@@ -26,8 +25,6 @@ create table if not exists vehicle
     gearbox_id  int references gearbox (id),
     engine_id   int references engine (id)
 );
-
-commit;
 
 insert into car_body (name)
 values ('sedan'),
