@@ -11,11 +11,11 @@ import org.apache.commons.dbcp2.BasicDataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import ru.job4j.logger.principle004.UsageLog4j2;
+import ru.job4j.logger.principle004.UsageLog4j;
 
 public class ConnectionFactory {
 
-    private static final Logger LOG = LoggerFactory.getLogger(UsageLog4j2.class);
+    private static final Logger LOG = LoggerFactory.getLogger(UsageLog4j.class);
 
     private final BasicDataSource pool = new BasicDataSource();
 
